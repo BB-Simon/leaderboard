@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Todo List</b></h3>
+  <h3><b>Leaderboard</b></h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -31,9 +31,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Todo List] <a name="about-project"></a>
+# 📖 [Leaderboard] <a name="about-project"></a>
 
-**Todo List**
+**Leaderboard**
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -54,15 +54,8 @@
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-- **[Dynamic Todo List]**
-- **[Read Tooo List from Local Storage]**
-- **[Add a New Item Todo List]**
-- **[Edit an Item from The Todo List]**
-- **[Remove an Item from The Todo List]**
-- **[Mark an Item of Todo List as Completed]**
-- **[Remove All Items of Todo List that have marked as Completed]**
-- **[Reset Todo list indexes]**
-- **[Sort Todo list by index]**
+- **Set up webpack and linter config**
+- **Add markup and basic styles**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,21 +88,16 @@ In order to run this project you need:
 
 > Clone this repository to your desired folder:
 
-git clone https://github.com/BB-Simon/todo-list-with-es6
+git clone https://github.com/BB-Simon/leaderboard
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 👤  **BB-Simon**
 
 - GitHub: [@githubhandle](https://github.com/BB-Simon) 
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/bb-simon/) 
-
-👤  **Mudassir Nazir**
-
-- GitHub: [@githubhandle](https://github.com/Rana-Mudassir)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/rana-mudassir-nazir-03541114a/) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,7 +115,7 @@ git clone https://github.com/BB-Simon/todo-list-with-es6
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/BB-Simon/todo-list-with-es6/issues).
+Feel free to check the [issues page](https://github.com/BB-Simon/leaderboard/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,7 +131,7 @@ If you like this project, you are welcomed to star and fork it. You can also sha
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for their idea of  the idea of todo list project.
+I would like to thank Microverse for their idea of  the idea of Leaderboard project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
