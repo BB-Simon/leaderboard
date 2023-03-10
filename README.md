@@ -96,6 +96,12 @@ In order to run this project you need:
 
 git clone https://github.com/BB-Simon/leaderboard
 
+### Run
+- `npm install`
+- `npm start`
+to built:
+- `npm run build`
+
 <!-- AUTHORS -->
 
 ## 👥 Author <a name="authors"></a>

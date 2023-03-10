@@ -3,7 +3,7 @@ import { get, set } from './modules/store.js';
 import './style.css';
 
 const id = get('gameId');
-const scores = get('scores');
+const scores = get('scores') || [];
 
 const form = document.getElementById('add-score-form');
 const refreshBtn = document.getElementById('refresh-btn');
@@ -24,6 +24,7 @@ const scoresContainer = document.getElementById('scores-container');
 const displayScores = (scores) => {
   if (scores.length > 0) {
     scoresContainer.innerHTML = '';
+    scoresContainer.classList.add('border');
     scores.forEach((score) => {
       const li = document.createElement('li');
       const html = `
@@ -42,14 +43,16 @@ displayScores(scores);
 // Create new score
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
+  const gameId = get('gameId');
   const { name, score } = e.target;
-  await createScore(id, name.value, score.value);
+  await createScore(gameId, name.value, score.value);
   e.target.reset();
 });
 
 // Load all scores
 refreshBtn.addEventListener('click', async () => {
-  const data = await getScores(id);
+  const gameId = get('gameId');
+  const data = await getScores(gameId);
   displayScores(data.result);
   set('scores', data.result);
 });
