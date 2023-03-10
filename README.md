@@ -56,6 +56,12 @@
 ### Key Features <a name="key-features"></a>
 - **Set up webpack and linter config**
 - **Add markup and basic styles**
+- **Create a new game on page load**
+- **Display all socres in the leaderboard**
+- **Create new score**
+- **Create new score**
+- **Get all scores**
+- **store game id and all scores in local storage**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,6 +95,12 @@ In order to run this project you need:
 > Clone this repository to your desired folder:
 
 git clone https://github.com/BB-Simon/leaderboard
+
+### Run
+- `npm install`
+- `npm start`
+to built:
+- `npm run build`
 
 <!-- AUTHORS -->
 

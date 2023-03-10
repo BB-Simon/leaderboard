@@ -64,6 +64,9 @@ header > h1 {
 
 .recent-scores-board {
   margin: 20px 0;
+}
+
+.border {
   border: 1px solid #eee;
 }
 
