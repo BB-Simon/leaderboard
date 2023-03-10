@@ -4,10 +4,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --lightWhite: #f3f3f3;
+  --dark: #0e1625;
+  --darkBlue: #1e2447;
+  --lightBlue1: #f7f7f8;
+  --lightBlue2: #e6e6e9;
+  --lightBlue3: #4a4f6b;
+  --radius: 4px;
+}
+
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: #fff;
-  color: #333;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  background-color: var(--lightWhite);
 }
 
 ul li {
@@ -27,7 +36,12 @@ ul {
 
 h3 {
   font-size: 24px;
-  line-height: 28px;
+  font-weight: 300;
+  line-height: 34px;
+  letter-spacing: 0.3px;
+  color: var(--darkBlue);
+  opacity: 0.8;
+  text-transform: uppercase;
 }
 
 main {
@@ -37,16 +51,19 @@ main {
 }
 
 header > h1 {
-  font-size: 34px;
+  font-size: 44px;
+  font-weight: 600;
   line-height: 42px;
+  letter-spacing: 0.5px;
   text-align: center;
+  color: var(--darkBlue);
 }
 
 .section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
-  margin: 30px 0;
+  grid-template-columns: 1fr;
+  grid-gap: 60px;
+  margin: 50px 0;
 }
 
 .recent-scores-header {
@@ -56,10 +73,18 @@ header > h1 {
 }
 
 .refresh-btn {
-  padding: 8px 34px;
+  background: var(--darkBlue);
+  color: var(--lightBlue1);
+  padding: 8px 44px;
   font-size: 16px;
-  border-radius: 4px;
+  border: none;
+  border-radius: var(--radius);
   cursor: pointer;
+  transition: all 0.3 ease-in-out;
+}
+
+.refresh-btn:hover {
+  background: var(--dark);
 }
 
 .recent-scores-board {
@@ -67,30 +92,69 @@ header > h1 {
 }
 
 .border {
-  border: 1px solid #eee;
+  border: 1px solid var(--darkBlue);
+  border-radius: var(--radius);
 }
 
 .recent-scores-board li {
   width: 100%;
   padding: 10px;
+  color: var(--lightBlue3);
+}
+
+.recent-scores-board li:first-child {
+  border-top-right-radius: var(--radius);
+  border-top-left-radius: var(--radius);
+}
+
+.recent-scores-board li:last-child {
+  border-bottom-right-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
 }
 
 .recent-scores-board li:nth-child(odd) {
-  background: #f3f3f3;
+  background: var(--lightBlue2);
 }
 
 .recent-scores-board li:nth-child(even) {
-  background: #fff;
+  background: var(--lightBlue1);
 }
 
 .add-score-form {
   display: flex;
   flex-direction: column;
+  margin: 20px 0;
 }
 
 .add-score-form input {
-  margin: 10px 0;
+  margin-bottom: 24px;
   padding: 11px 6px;
   font-size: 16px;
-  color: #333;
+  background: var(--lightBlue1);
+  color: var(--darkBlue);
+  border: 1px solid var(--darkBlue);
+  border-radius: var(--radius);
+  opacity: 0.5;
+}
+
+.add-score-form input:hover,
+.add-score-form input:focus {
+  outline: none;
+  opacity: 1;
+}
+
+.add-score-form input[type="submit"] {
+  background: var(--darkBlue);
+  color: var(--lightBlue1);
+  cursor: pointer;
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 60px;
+    margin: 50px 0;
+  }
 }
