@@ -17,30 +17,15 @@
       <article class="recent-scores">
         <div class="recent-scores-header">
           <h3>Recent scores</h3>
-          <button class="refresh-btn">Refresh</button>
+          <button id="refresh-btn" class="refresh-btn">Refresh</button>
         </div>
-        <ul class="recent-scores-board">
-          <li>
-            <span>Simon:</span>
-            <span>2345</span>
-          </li>
-          <li>
-            <span>Simon</span>
-            <span>2345</span>
-          </li>
-          <li>
-            <span>Simon</span>
-            <span>2345</span>
-          </li>
-          <li>
-            <span>Simon</span>
-            <span>2345</span>
-          </li>
+        <ul id="scores-container" class="recent-scores-board">
+          <!-- Dyanmic scores will be here  -->
         </ul>
       </article>
       <article class="add-score">
         <h3>Add your score</h1>
-        <form class="add-score-form">
+        <form id="add-score-form" class="add-score-form">
           <input type="text" name="name" placeholder="Your name">
           <input type="number" name="score" placeholder="Your score">
           <input type="submit" value="Submit">

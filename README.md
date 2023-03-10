@@ -56,6 +56,12 @@
 ### Key Features <a name="key-features"></a>
 - **Set up webpack and linter config**
 - **Add markup and basic styles**
+- **Create a new game on page load**
+- **Display all socres in the leaderboard**
+- **Create new score**
+- **Create new score**
+- **Get all scores**
+- **store game id and all scores in local storage**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
